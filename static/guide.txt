@@ -1,0 +1,1 @@
+Please in the static folder create a directory with your name and add your files
