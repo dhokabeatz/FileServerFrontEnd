@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DocumentStream | Dashboard</title>
+        <link rel="stylesheet" href="../assets/css/dashboard_css.css" />
+    </head>
+    <body>
+        <div class="header">
+            <input type="text" id="search" placeholder="Search documents or description" autocomplete="off" onkeyup="filterDocuments()" />
+            <button class="uploadBtn">Upload Document</button>
+        </div>
+
+        <span class="form-title"
+            >Dashboard | Documents
+            <span id="document-count">0</span>
+        </span>
+
+        <section class="card-container" id="card-container">
+            <!-- Cards will be inserted here with javascript -->
+        </section>
+
+        <script src="../assets/js/document_data.js"></script>
+        <script src="../assets/js/search.js"></script>/
+    </body>
+</html>
