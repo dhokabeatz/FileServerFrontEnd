@@ -1,0 +1,5 @@
+Opens in the dashboard
+
+document popup when user clicks in the open button, use icons, 
+
+Shows name of file, description and two buttons download and send via email
