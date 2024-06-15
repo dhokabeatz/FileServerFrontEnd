@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DocumentStream | Dashboard</title>
+        <link rel="stylesheet" href="../assets/css/dashboard_css.css" />
+        <link rel="stylesheet" href="../assets/css/popup.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    </head>
+    <body>
+        <div class="header">
+            <input type="text" id="search" placeholder="Search documents or description" autocomplete="off" onkeyup="filterDocuments()" />
+            <button class="uploadBtn">Upload Document</button>
+        </div>
+
+        <span class="form-title"
+            >Dashboard | Documents
+            <span id="document-count"></span>
+        </span>
+
+        <section class="card-container" id="card-container">
+            <!-- Cards will be inserted here with javascript -->
+        </section>
+
+        <div class="popup" id="popupWindow">
+            <div class="popup-content">
+                <div class="top">
+                    <h1 class="popup-title" id="popupTitle"></h1>
+                    <span class="close-btn" onclick="closePopup()">&times;</span>
+                </div>
+                <span class="document-description">Description</span>
+                <div class="popup-description-container">
+                    <span class="document-description" id="popupDescription"></span>
+                </div>
+                <div class="action-btn-container">
+                    <button id="downloadBtn" title="Download document"><span class="material-symbols-rounded"> download </span></button>
+                    <button id="sendByEmailBtn" title="Share via email"><span class="material-symbols-rounded"> forward_to_inbox </span></button>
+                </div>
+            </div>
+        </div>
+
+        <script src="../assets/js/document_data.js"></script>
+        <script src="../assets/js/main.js"></script>
+    </body>
+</html>
