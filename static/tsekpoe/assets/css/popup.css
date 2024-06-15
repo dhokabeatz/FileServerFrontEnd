@@ -81,3 +81,14 @@
         transform: scale(1);
     }
 }
+
+@media (max-width: 720px) {
+    .action-btn-container {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .close-btn {
+        display: none;
+    }
+}
