@@ -105,6 +105,27 @@ form,
     display: none;
 }
 
+.custom-shape-divider-bottom-1717352448 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1717352448 svg {
+    position: relative;
+    display: block;
+    width: calc(140% + 1.3px);
+    height: 200px;
+}
+
+.custom-shape-divider-bottom-1717352448 .shape-fill {
+    fill: #09376e;
+}
+
 @media (max-width: 929px) {
     form {
         width: 70%;
